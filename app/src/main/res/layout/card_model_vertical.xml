@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="350dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cardVerticalThumbnail"
+                android:layout_width="230dp"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portrait"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cardVerticalDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:text="02-09-2022 at 05:00 pm"
+                android:textColor="@color/ash"
+                android:textSize="15sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/cardVerticalTitle"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/cardVerticalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/acme"
+                android:text="iPhone 14 and 14 Plus Hands-On: New Cameras, Larger Screen, eSIM Card - CNET"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
